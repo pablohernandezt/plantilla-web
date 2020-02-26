@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand';
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(Skewed.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+header .textos {
+    margin-top: 152px;
+}
+
+header .titulo h1 {
+    font-size: 85px;
+}
+
+header .subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+header .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #34495e;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 16px;
+    background: #2c3e50;
+    transition: transform .9s;
+}
+
+header .boton:hover {
+    background: #95a5a6;
+    transition: background-color .5s;
+    transform: scale(1.3);
+    transition: transform .9s;
+}
+
+.sesgoabajo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.acerca-de .boton {
+    display: block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #34495e;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 16px;
+    background: #2c3e50;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    transition: transform .9s;
+}
+
+.acerca-de .boton:hover {
+    background: #95a5a6;
+    transition: background-color .5s;
+    transform: scale(1.3);
+    transition: transform .9s;
+}
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.815);
+    transition: transform .9s;
+}
+
+.encima:hover {
+    transform: scale(1.3);
+    transition: transform .9s;
+}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: white;
+    margin: auto;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+}
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+    transition: transform .9s;
+}
+
+.fondo {
+    height: 900px;
+    position: relative;
+    background: url(fondo.png);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+
+.sesgoabajo-unico {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent;
+}
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+    color: white;
+    text-align: center;
+}
+
+.titulo-patrocinadores {
+    font-size: 56px;
+    margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+    font-size: 24px;
+    margin-top: 54px;
+    font-weight: 300;
+}
+
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+
+.cliente img {
+    width: 100%;
+    margin-top: 30px;
+    transition: transform .9s;
+}
+
+.cliente img:hover {
+    transform: scale(1.4);
+    transition: transform .9s;
+}
+
+footer {
+    background: #2c3e50;
+    height: auto;
+}
+
+.titulo-footer,
+.subtitulo-footer {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+}
+
+.subtitulo-footer {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 84px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"],
+[type="email"] {
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: white;
+    font-family: 'Quicksand';
+    background: rgba(37, 37, 33, .7);
+    text-decoration: none;
+    margin-bottom: 16px;
+    border-top: 1px solid rgba(37, 37, 33, .7);
+}
+
+input[type="text"]:hover,
+[type="email"]:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.623);
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.623);
+}
+
+input[type="text"],
+[type="email"]:focus {
+    outline: 0px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 33, .7);
+    border: none;
+    color: white;
+    font-family: 'Quicksand';
+}
+
+textarea:focus {
+    outline: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.623);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.botonEnviar {
+    width: 40%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 30%;
+    background: rgba(37, 37, 33, .7);
+    border: none;
+    color: white;
+    border-radius: 20px;
+}
+
+
+/*--------------- @MEDIA QUERY --------------------*/
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .card {
+        width: 48%;
+    }
+    .none {
+        display: none;
+    }
+    .imagenes {
+        flex-grow: 1;
+    }
+    .encima h2 {
+        font-size: medium;
+    }
+}
